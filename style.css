@@ -11,9 +11,13 @@ body {
 
   background-repeat: no-repeat, no-repeat;
 
-  background-position: 800px -100px, -150px 800px;
+  background-position: 900px -200px, -500px 900px;
 
   font-size: 16px;
+}
+
+p {
+  color: hsl(227, 12%, 61%);
 }
 
 header {
@@ -107,7 +111,44 @@ h1 {
 }
 
 .intro > p {
-  color: hsl(227, 12%, 61%);
   width: 70%;
   margin-bottom: 8%;
+}
+
+.middle-container {
+  margin-top: 3%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.middle-container > div {
+  width: 35%;
+}
+
+h2 {
+  font-size: 2.5em;
+  line-height: 40px;
+}
+
+.middle-container > .middle-item > p {
+  margin-top: 8%;
+}
+
+.middle-wrapper {
+  display: flex;
+}
+
+.middle-item > p {
+  margin-bottom: 15%;
+}
+
+.middle-wrapper > span {
+  position: absolute;
+  right: 43%;
+  background-color: hsl(12, 88%, 59%);
+  padding: 0.3% 0.9% 0.3% 0.9%;
+  border-radius: 40px;
+  width: 4%;
+  text-align: center;
+  color: hsl(0, 0%, 98%);
 }
