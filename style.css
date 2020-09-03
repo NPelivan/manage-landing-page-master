@@ -155,6 +155,8 @@ h2 {
 
 .testimonial-container {
   margin-top: 5%;
+  width: 100%
+  margin: auto;
 }
 
 .testimonial-container > h2 {
@@ -170,21 +172,62 @@ h2 {
 .user {
   display: block;
   background-color: hsl(0, 0%, 98%);
-  margin: auto;
+  margin: 30px;
+  position: relative;
+  padding: 40px;
 }
 
 .user > span {
   margin-bottom: 4%;
-  width: 100%;
   text-align: center;
   font-weight: 700;
   margin: auto;
+  width: 30vw;
 }
 
 .user > img {
-  width: 20%;
+  width: 30%;
   display: block;
   margin: auto;
   position: relative;
-  bottom: 12%;
+  bottom: 70px;
+}
+
+.user > p {
+  width: 100%;
+  text-align: center;
+}
+.testimonial-container > button {
+  margin-top: 5%;
+  width: 9%;
+  transform: translate(500%, -50%);
+}
+
+.slick-list {
+  width: 100%;
+}
+
+.bottom-container {
+  background-color: hsl(12, 88%, 59%);
+  height: 20vh;
+}
+
+.bottom-wrapper {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.bottom-wrapper > h2 {
+  color: hsl(0, 0%, 98%);
+  width: 40%;
+}
+
+.bottom-wrapper > button {
+  background-color: hsl(0, 0%, 98%);
+  color: hsl(12, 88%, 59%);
+  opacity: 1;
 }
