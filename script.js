@@ -26,3 +26,23 @@ form.addEventListener("submit", (event) => {
     email.value = "";
   }
 });
+
+// mobile nav
+
+const burgerButton = document.querySelector(".burger-btn");
+const closeButton = document.querySelector(".close-active");
+const mobNav = document.querySelector(".mobile-nav");
+const openButton = document.querySelector(".open");
+
+burgerButton.onclick = () => {
+  burgerButton.classList.toggle("active");
+  mobNav.classList.toggle("show");
+  closeButton.classList.toggle("close-active");
+  openButton.classList.toggle("open");
+};
+
+mobNav.onclick = () => {
+  mobNav.classList.toggle("show");
+  burgerButton.classList.toggle("active");
+  closeButton.classList.toggle("close-active");
+};

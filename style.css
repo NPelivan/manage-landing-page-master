@@ -35,6 +35,14 @@ nav {
   text-align: center;
 }
 
+.mobile-nav {
+  display: none;
+}
+
+.burger-btn {
+  display: none;
+}
+
 nav > ul {
   display: flex;
   margin: auto;
@@ -330,5 +338,140 @@ h2 {
 
   .bottom-wrapper > h2 {
     font-size: 35px;
+  }
+}
+
+/* Mobile 425px */
+
+@media (max-width: 426px) {
+  * {
+    width: 100%;
+  }
+  header > nav {
+    display: none;
+  }
+
+  header > button {
+    display: none;
+  }
+
+  header {
+    margin-top: 5%;
+    width: 90%;
+    height: 10vh;
+  }
+
+  header > img {
+    width: 40%;
+    margin-left: 3%;
+  }
+
+  .burger-btn {
+    display: flex;
+    width: 12%;
+    background-color: unset;
+    border-radius: 0;
+    box-shadow: unset;
+    justify-content: space-between;
+  }
+
+  .active {
+    transform: translate(180px);
+  }
+
+  .hide {
+    display: block;
+  }
+
+  .close {
+    display: none;
+  }
+
+  .open {
+    display: none;
+  }
+
+  .show {
+    display: block;
+  }
+
+  .close-active {
+    display: block;
+  }
+
+  .show {
+    transform: translate(-50%, 90%);
+    width: 100%;
+  }
+
+  .show > ul {
+    width: 100%;
+    display: block;
+    background-color: white;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+    margin: 0;
+  }
+
+  .flex-item > h1 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  .flex-item > p {
+    margin: 0;
+    width: 100%;
+  }
+
+  .flex-item > button {
+    width: 40%;
+    margin-top: 10%;
+  }
+
+  .middle-container {
+    display: block;
+  }
+
+  .middle-container > .middle-item {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+  }
+
+  .middle-container > .middle-item > .middle-wrapper {
+    width: 100%;
+    margin: 0;
+    text-align: left;
+  }
+
+  .middle-container > .middle-item > .middle-wrapper > span {
+    position: absolute;
+    right: 0;
+    left: 10%;
+    width: 10%;
+  }
+  .middle-container > .middle-item > .middle-wrapper > h4 {
+    padding-left: 20%;
+    background-color: hsl(13, 100%, 96%);
+  }
+
+  .middle-container > .middle-item > p {
+    text-align: left;
+    width: 100%;
+  }
+
+  .testimonial-container {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .user {
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
   }
 }
