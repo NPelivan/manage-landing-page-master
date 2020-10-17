@@ -4,6 +4,20 @@ $(".testimonial-items").slick({
   autoplay: true,
   autoplaySpeed: 7000,
   arrows: false,
+  responsive: [
+    {
+      breakpoint: 800,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+
+        autoplay: true,
+        autoplaySpeed: 7000,
+        centerMode: false,
+        variableWidth: false,
+      },
+    },
+  ],
 });
 
 function validateEmail(email) {

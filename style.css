@@ -273,6 +273,12 @@ h2 {
     brightness(99%) contrast(92%);
 }
 
+.btn-nav {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
 .second {
   text-decoration: none;
 }
@@ -347,6 +353,7 @@ h2 {
   * {
     width: 100%;
   }
+
   header > nav {
     display: none;
   }
@@ -464,14 +471,82 @@ h2 {
     width: 100%;
   }
 
-  .testimonial-container {
-    width: 100%;
-    overflow: hidden;
+  .testimonial-container > h2 {
+    margin-bottom: 30%;
   }
 
-  .user {
+  .testimonial-container > button {
+    width: 30%;
+    transform: translate(120%, -50%);
+    margin-top: 20%;
+  }
+
+  .bottom-container {
+    height: 50vh;
+    text-align: center;
+    padding-top: 15%;
+  }
+
+  .bottom-container > .bottom-wrapper {
+    display: block;
+    text-align: center;
+  }
+
+  .bottom-wrapper > h2 {
+    font-size: 40px;
     width: 100%;
-    overflow: hidden;
-    margin: 0;
+    margin: auto;
+    text-align: center;
+  }
+
+  .bottom-wrapper > button {
+    width: 30%;
+    margin-top: 10%;
+  }
+
+  .bottom-nav > div {
+    display: flex;
+    flex-direction: column-reverse;
+    margin: auto;
+  }
+
+  .second {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+  }
+
+  .btn-nav {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .third > small {
+    position: absolute;
+    bottom: 50%;
+  }
+
+  .first {
+    text-align: center;
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .social-network {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .social-network > a {
+    width: 10%;
+    margin-bottom: 10%;
+  }
+
+  .first > img {
+    width: 50%;
+    margin: auto;
   }
 }
