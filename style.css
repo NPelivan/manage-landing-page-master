@@ -521,11 +521,6 @@ h2 {
     justify-content: space-between;
   }
 
-  .third > small {
-    position: absolute;
-    bottom: 50%;
-  }
-
   .first {
     text-align: center;
     margin-top: 10%;
@@ -548,5 +543,26 @@ h2 {
   .first > img {
     width: 50%;
     margin: auto;
+  }
+}
+
+@media (max-width: 376px) {
+  .testimonial-container > button {
+    width: 40%;
+    transform: translate(70%, -50%);
+  }
+
+  .bottom-wrapper > button {
+    width: 40%;
+  }
+
+  .user > img {
+    width: 40%;
+  }
+}
+
+@media (max-width: 321px) {
+  .user > img {
+    width: 50%;
   }
 }
